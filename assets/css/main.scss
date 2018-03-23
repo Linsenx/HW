@@ -1,0 +1,206 @@
+* {
+	font-family: "PingFang SC", "Microsoft YaHei", "微软雅黑";
+	//font-family: SourceHanSansCN;
+	//font-family: Source Sans Pro,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif
+}
+
+body {
+	color: #3b3e43;
+	font-size: 13px;
+}
+
+// @font-face
+// {
+// 	font-family: SourceHanSansCN;
+// 	src: url("~/assets/font/SourceHanSansCN-Regular.ttf");
+// }
+@font-face
+{
+	font-family: OpenSansRegular;
+	src: url("~/assets/font/OpenSans-Regular.ttf");
+}
+@font-face
+{
+	font-family: OpenSansLight;
+	src: url("~/assets/font/OpenSans-Light.ttf");
+}
+@font-face
+{
+	font-family: OpenSansBold;
+	src: url("~/assets/font/OpenSans-Bold.ttf");
+}
+@font-face
+{
+	font-family: Raleway;
+	src: url("/assets/font/Raleway-Medium.otf");
+}
+
+/**
+* Global Settings
+*/
+$_scale     : 1.5;
+$_mainWidth : 1917px; 
+$_containerWidth : 1280px;
+@function SC($px) {
+	@return round($px / $_scale * 1px);
+}
+
+/**
+* Swiper Settings
+*/
+.swiper {
+	ul {
+		transition: margin-left 1s;
+		transition-timing-function: ease-in-out;
+	}
+}
+
+/*
+* Header Settings
+*/
+.header {	
+	width: 100%;
+	height: SC(50);
+	background-color: #3b3e43;
+	li {
+		float: right;
+		margin-right: 20px;
+		line-height: SC(50);
+	}
+	a {
+		color: #dddddd;
+		&:hover {
+			font-weight: bold;
+		}
+	}
+}
+.header-wrap {
+	width: 100%;
+	height: SC(140);
+	padding: SC(30) 0 SC(30) 0;
+	border-bottom: 1px solid #d7d7d7;
+	.header-wrap-content {
+		position: relative;
+		width: $_containerWidth;
+		margin: 0 auto;
+		.header-wrap-content-logo {
+			position: absolute;
+			left: SC(70);
+			width: SC(250);
+			height: SC(80);
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-image: url("~/assets/img/logo.png");
+		}
+
+		.header-warp-content-nav {
+			color: #3b3e43;
+			position: absolute;
+			top: SC(-30);
+			left: SC(450);
+			line-height: SC(135);
+			.nav-item {
+				text-align: center;
+				float: left;	
+				min-width: SC(90);	
+				letter-spacing: 2px;
+				margin-left: SC(63-10);
+			}
+			.focus a {
+				color: #bca480;
+			}
+			.selected {
+				border-bottom: 3px solid #bca480;
+				a {
+					font-weight: bold;
+				}
+			}
+		}
+	}
+}
+.header-breadcrumbs {
+	width: 100%;
+	height: SC(70);
+	line-height: SC(70);
+	letter-spacing: 2px;
+	border-bottom: 1px solid #d7d7d7;
+	.header-breadcrumbs-content {
+		width: $_containerWidth;
+		margin: 0 auto;
+		padding: 0 SC(120) 0 SC(120);
+
+		.header-breadcrumbs-content-link {
+			float: right;
+			.header-breadcrumbs-content-link-nowpage {
+				color: #bca480;
+			}
+		}
+	}
+}
+
+/*
+* Footersmall Settings
+*/
+.footersmall {
+	width: 100%;
+	height: SC(84);
+	line-height: SC(84);
+	margin: 0 auto;
+	text-align: center;
+	background: #3b3e43;
+	color: #ffffff;
+}
+
+/*
+* Footerbig Settings
+*/
+.footerbig {
+	position: relative;
+	width: 100%;
+	height: SC(300);
+	margin: 0 auto;
+	padding: SC(50) 0 SC(50) 0;
+	text-align: center;
+	background: #3b3e43;
+	color: #ffffff;
+
+	.footerbig-title {
+		.fa-list-alt {
+			color: #bca480; 
+			font-size: SC(30);
+		}
+		p {
+			margin-top: SC(24);
+			font-weight: bold;
+			letter-spacing: 4px;
+		}
+	}
+
+	.footerbig-content {
+		width: SC(850);
+		margin: 10px auto;
+		line-height: SC(24);
+		letter-spacing: 1px;
+	}
+
+	.footerbig-qrcode {
+		position: absolute;
+		right: SC(172);
+		bottom: SC(44);
+		img {
+			width: SC(140);
+			height: SC(140);
+			&.qr_ccf {
+			 margin-left: SC(40);
+			}
+		}
+	}
+}
+
+/*
+* Banner Settings
+*/
+.banner {
+	width: $_containerWidth;
+	margin: 0 auto;
+}
