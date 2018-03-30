@@ -14,6 +14,7 @@
   },
   "dependencies": {
     "animate.css": "^3.6.1",
+    "axios": "^0.18.0",
     "font-awesome": "^4.7.0",
     "less": "^3.0.1",
     "less-loader": "^4.0.6",
@@ -22,7 +23,8 @@
     "postcss-loader": "2.1.1",
     "sass-loader": "^6.0.7",
     "scrollreveal": "^3.4.0",
-    "velocity-animate": "1.2.3"
+    "velocity-animate": "1.2.3",
+    "whatwg-fetch": "^2.0.3"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",

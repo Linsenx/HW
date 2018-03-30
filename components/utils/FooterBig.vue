@@ -3,10 +3,12 @@
     <div class="footerbig">
       <div class="footerbig-title">
         <i class="fa fa-list-alt"></i>
-        <p>WHAT PEOPLE SAY</p>
+        <p>ABOUT HELLO WORLD</p>
       </div>
       <div class="footerbig-content">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        <p>地址: 杭州电子科技大学生活区22栋楼二层</p>
+        <p>官方QQ号: 2459927596</p>
+        <p>官方微信公众号: HelloWorld</p>
       </div>
       <div class="footerbig-qrcode">
         <img src="~/assets/img/qr_wechat.png" class="qr_wechat">
@@ -29,5 +31,8 @@
   .footerbig {
     clear: both;
     font-family: OpenSansRegular;
+    p {
+      margin-bottom: 10px;
+    }
   }
 </style>

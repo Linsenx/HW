@@ -31,6 +31,11 @@ body {
 }
 @font-face
 {
+	font-family: OpenSansSemibold;
+	src: url("~/assets/font/OpenSans-Semibold.ttf");
+}
+@font-face
+{
 	font-family: Raleway;
 	src: url("/assets/font/Raleway-Medium.otf");
 }
@@ -44,6 +49,9 @@ $_containerWidth : 1280px;
 @function SC($px) {
 	@return round($px / $_scale * 1px);
 }
+.clear {
+	clear: both;
+}
 
 /**
 * Swiper Settings
@@ -53,6 +61,15 @@ $_containerWidth : 1280px;
 		transition: margin-left 1s;
 		transition-timing-function: ease-in-out;
 	}
+}
+
+/**
+* Warpper Setting
+*/
+.warpper {
+	width: 1280px;
+	margin: 0 auto;
+	box-shadow: 0px 6px 15px #ccc;
 }
 
 /*

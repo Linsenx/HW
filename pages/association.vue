@@ -1,10 +1,11 @@
 <template>
   <div class="container">
+    <Header :showTopBar="false" :showBreadcrumbs="true" :nowSelected="0"/>
     <div class="warpper">
-      <Header :showTopBar="false" :showBreadcrumbs="true" :nowSelected="0"/>
       <History/>
       <Achievement/>
       <NumberBar/>
+      <Timeline/>
     </div>
     <FooterSmall/>
   </div>
@@ -16,6 +17,7 @@ import FooterSmall from '~/components/utils/FooterSmall.vue'
 import History from '~/components/association/History.vue'
 import Achievement from '~/components/association/Achievement.vue'
 import NumberBar from '~/components/association/NumberBar.vue'
+import Timeline from '~/components/association/Timeline.vue'
 
 export default {
   components: {
@@ -23,11 +25,13 @@ export default {
     History,
     Achievement,
     NumberBar,
+    Timeline,
     FooterSmall,
   }
 }
 </script>
 
-<style>
+<style lang="scss">
+  @import "assets/css/main.scss";
 
 </style>

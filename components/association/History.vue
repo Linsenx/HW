@@ -54,18 +54,19 @@
 export default {
   data: function() {
     return {
-      switchNums: 6,
-      nowSelected: 1,
-      nowSelectedYear: 2015,
+      switchNums: 5,
+      nowSelected: 0,
+      nowSelectedYear: 2014,
       historyInfo: [
-        {id: 0, enable: 1, icon: 'birthday-cake', year: '2014', content: '2014.04.26#与杭州Google开发者社区（GDG）共同举办“Google I/O 直播之夜”|'},
-        {id: 1, enable: 1, icon: 'book', year:'2015', content: '2015.01.05#成立浙江省高校微联盟，包含全省60家高校的72个微信公众号|2015.04.18#成立杭州首家跨境电商O2O体验中心|2015.05.23#协办百事可乐“把乐带回家”活动$举办2015浙江省-安控杯Hackathon大赛|2015.06.06#出席2015中国创客西湖峰会|'},
-        {id: 2, enable: 1, icon: 'bell-o', year: '2016', content: '2016.04.16#举办2016浙江省-龙驰杯Hackathon大赛|2016.09.20#社会实践团获校级“百优团队”|2016.12.03#与iOS club共同举办APP火花思维体验赛|2016.12.14#与浙江工业大学精弘网络合作交流|'},
-        {id: 3, enable: 1, icon: 'diamond', year: '2017', content: '2017.03.21#与腾讯TGP社举办《金刚：骷髅岛》观影|2017.04.02#成立浙江省高校技术类社团联盟|2017.04.13#举办首届高校技术沙龙|'},
-        {id: 4, enable: 1, icon: 'cube', year: '2018', content: ''},
-        {id: 5, enable: 0, icon: 'cubes', year: '2019', content: ''},
+        {id: 0, enable: 1, icon: 'birthday-cake', year: '2014', content: '2014.03#Helloworld创立|2014.05.16#邀请偷吃网创始人汪广智来演讲交流|2014.05.13#举办第一次电脑维修培训|2014.05.16#举办第二次电脑维修培训2014.04.26#与杭州Google开发者社区（GDG）共同举办“Google I/O 直播之夜”|'},
+        {id: 1, enable: 1, icon: 'book', year:'2015', content: '2015.01.05#成立浙江省高校微联盟，包含全省60家高校的72个微信公众号|2015.04.08#社团集体武汉行|2015.04.18#社团实体店 杭州首家跨境电商O2O体验中心开业|2015.05.09#南北湖自由行|2015.05.14#主席团换届|2015.05.23#协办百事可乐“把乐带回家”活动$举办2015浙江省-安控杯Hackathon大赛|2015.06.06#出席2015中国创客西湖峰会|'},
+        {id: 2, enable: 1, icon: 'bell-o', year: '2016', content: '2016.04.16#举办2016浙江省-龙驰杯Hackathon大赛|2016.09.20#社会实践团获校级“百优团队”|2016.10.10#邀请Michael Gao来演讲|2016.12.03#与iOS club共同举办APP火花思维体验赛|2016.12.14#与浙江工业大学精弘网络合作交流|'},
+        {id: 3, enable: 1, icon: 'diamond', year: '2017', content: '2017.03.21#与腾讯TGP社举办《金刚：骷髅岛》观影|2017.04.02#成立浙江省高校技术类社团联盟|2017.04.13#举办首届高校技术沙龙|2017.05.24#主席团换届|2017.05.28#千岛湖春游|2017.12.02#轰趴馆秋游'},
+        {id: 4, enable: 1, icon: 'cube', year: '2018', content: '2018#奋斗ing，精彩仍在上演|'},
+        // {id: 5, enable: 0, icon: 'cubes', year: '2019', content: ''},
       ]
     }
+
   },
   methods: {
     getHistoryInfo: function(year) {
@@ -106,7 +107,8 @@ export default {
 
   .history {
     width: SC(1150);
-    margin: SC(110) auto;
+    margin: 0 auto;
+    padding-top: SC(110);
     text-align: center;
     .history-title-english {
       font-family: Raleway;
@@ -123,8 +125,9 @@ export default {
 
   .history-switches {
     position: relative;
-    width: SC(1150);
-    height: SC(114);
+    width: SC(159*5 + 114);
+    height: SC(114+110);
+    margin: 0 auto;
     .history-switches-line {
       width: SC(1150);
       height: 1px;
@@ -187,11 +190,11 @@ export default {
 
   .history-content {
     position: relative;
-    height: SC(600);
+    min-height: SC(600);
     perspective: 400px;
     .history-content-list {
-      position: absolute;
-      left: 0; right: 0;
+      padding: 15px 0 25px 0;
+      //position: absolute; left: 0; right: 0;
       .history-content-list-item {
         .history-content-list-item-year {
           margin-top: SC(30);

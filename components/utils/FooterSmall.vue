@@ -1,7 +1,7 @@
 <template>
   <div class="footersmall">
     <div class="footerbig-title">
-      © All Rights Reserved MILO template
+      © All Rights Reserved HelloWorld
     </div>
   </div>
 </template>

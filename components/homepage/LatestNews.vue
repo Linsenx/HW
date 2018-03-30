@@ -7,16 +7,16 @@
       </div>
       <div class="latestnews-content">
         <div class="latestnews-content-item">
-          <div class="latestnews-content-item-content">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </div>
-          <div class="latestnews-content-item-image"></div>
+          <div class="latestnews-content-item-content">2017年12月，随着全国大学生“挑战杯”比赛落下帷幕，科技类比赛在我们心中留下了深刻的印记。为使同学们更好的感受科技魅力同时展现HelloWorld的风采。冬至，社团盛典活动期间， HelloWorld科技展以“走进科技舞台，书写大学新生活”为主题，在五四广场如期举行。</div>
+          <div class="latestnews-content-item-image"><img src="~/assets/img/news1.png"></div>
         </div>
         <div class="latestnews-content-item">
-          <div class="latestnews-content-item-content">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </div>
-          <div class="latestnews-content-item-image"></div>
+          <div class="latestnews-content-item-content">冬季，在12月2日HelloWorld集体出游。这不仅是一段紧张的学习后的间歇，不仅是一次亲近大自然的机会，也是一个可以熟悉彼此的平台，社员们在此次冬游活动中了解了彼此，也加强了我社的凝结力和魅力。</div>
+          <div class="latestnews-content-item-image"><img src="~/assets/img/news2.png"></div>
         </div>
         <div class="latestnews-content-item">
-          <div class="latestnews-content-item-content">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </div>
-          <div class="latestnews-content-item-image"></div>
+          <div class="latestnews-content-item-content">10月29日，CNCC活动圆满落幕。CNCC,一次思想的碰撞，一次与科技的对话。许多杰出的相关学者齐聚一堂，展示成果，预测趋势，探讨问题……只为更好的未来！我们相信每一次的结束，都预告了下一次的开始，请在此和HelloWorld一起期待！ </div>
+          <div class="latestnews-content-item-image"><img src="~/assets/img/news3.png"></div>
         </div>
       </div>
     </div>
@@ -72,10 +72,16 @@
           text-indent: SC(50);
           font-size: 12px;
           font-family: OpenSansRegular;
+          //text-shadow: 1px 1px 1px #ccc;
         }
         .latestnews-content-item-image {
           height: SC(220);
           background: #3b3e43;
+          img {
+            width: SC(370);
+            height: SC(220);
+          }
+          box-shadow: 2px 2px 3px #ccc;
         }
       }
     }

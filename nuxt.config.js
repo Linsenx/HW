@@ -23,6 +23,8 @@ module.exports = {
   css: [
     { src: '~assets/css/cleaning.scss', lang: 'scss' },
     { src: '~assets/css/main.scss', lang: 'scss' },
+    { src: '~/node_modules/font-awesome/scss/font-awesome.scss', lang: 'scss'},
+    { src: '~/node_modules/animate.css/animate.min.css', lang: 'css'},
   ],
   /*
   ** Build configuration

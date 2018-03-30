@@ -4,9 +4,6 @@
 
 
 <script>
-import "font-awesome/scss/font-awesome.scss";
-import "animate.css/animate.min.css";
-
 export default {
 
 }

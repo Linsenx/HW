@@ -1,7 +1,7 @@
 <template>
   <div class="container">
+    <Header :showTopBar="false" :showBreadcrumbs="true" :nowSelected="2"/>
     <div class="warpper">
-      <Header :showTopBar="false" :showBreadcrumbs="true" :nowSelected="2"/>
       <HallOfFame/>
     </div>
     <FooterSmall/>
@@ -22,6 +22,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+  @import "assets/css/main.scss";
 
 </style>

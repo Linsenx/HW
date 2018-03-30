@@ -1,8 +1,8 @@
 <template>
   <div class="container">
-    <Header :showTopBar="false" :showBreadcrumbs="true" :nowSelected="1"/>
+    <Header :showTopBar="false" :showBreadcrumbs="true" :nowSelected="5"/>
     <div class="warpper">
-      <Department/>
+      <Profile/>
     </div>
     <FooterSmall/>
   </div>
@@ -11,13 +11,13 @@
 <script>
 import Header from '~/components/utils/Header.vue'
 import FooterSmall from '~/components/utils/FooterSmall.vue'
-import Department from '~/components/department/Department.vue'
+import Profile from '~/components/profile/Profile.vue'
 
 export default {
   components: {
     Header,
-    Department,
     FooterSmall,
+    Profile,
   }
 }
 </script>
