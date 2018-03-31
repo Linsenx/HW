@@ -30,7 +30,6 @@
 <style lang="scss">
   .footerbig {
     clear: both;
-    font-family: OpenSansRegular;
     p {
       margin-bottom: 10px;
     }

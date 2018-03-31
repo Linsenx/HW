@@ -6,24 +6,27 @@
     </div>
     <div class="achievement-list">
       <div class="achievement-list-item">
-        <div class="achievement-list-item-image"></div>  
+        <div class="achievement-list-item-image">
+          <img src="~/assets/img/achievement1.png">  
+        </div>  
         <div class="achievement-list-item-link">
-          JOHN SNOW
-          <p>PROJECT MANAGER</p>
+          <p>荣获四星级社团评价</p>
         </div>
       </div>
       <div class="achievement-list-item">
-        <div class="achievement-list-item-image"></div>  
+        <div class="achievement-list-item-image">
+          <img src="~/assets/img/achievement2.jpg">
+        </div>  
         <div class="achievement-list-item-link">
-          AHAM OHOANM
-          <p>ART DIRECTOR</p>
+          <p>多所合作院校</p>
         </div>
       </div>
       <div class="achievement-list-item">
-        <div class="achievement-list-item-image"></div>  
+        <div class="achievement-list-item-image">
+          <img src="~/assets/img/achievement3.jpg">
+        </div>  
         <div class="achievement-list-item-link">
-          MARTIN YHAMKD
-          <p>WEB DESIGNER</p>
+          <p>多家合作企业</p>
         </div>
       </div>
     </div>
@@ -40,7 +43,7 @@ export default {
   @import "assets/css/main.scss";
 
   .achievement {
-    width: SC(1200); //3*370+2*40 + 10
+    width: SC(3*400+2*40+10); //3*370+2*40 + 10
     margin: 0 auto;
     text-align: center;
     .achievement-title-english {
@@ -65,9 +68,15 @@ export default {
         margin-right: 0 !important;
       }
       .achievement-list-item-image {
-        width: SC(370);
-        height: SC(440);
+        width: SC(400);
+        height: SC(300);
         background: #ebebeb;
+        img {
+          width: SC(400);
+          height: SC(300);
+          border: 1px solid #ccc;
+        }
+        box-shadow: 3px 3px 5px #ccc;
       }
       .achievement-list-item-link {
         margin: SC(50) 0 SC(100) 0;

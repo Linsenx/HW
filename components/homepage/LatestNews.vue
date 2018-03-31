@@ -71,7 +71,6 @@
           text-align: left;
           text-indent: SC(50);
           font-size: 12px;
-          font-family: OpenSansRegular;
           //text-shadow: 1px 1px 1px #ccc;
         }
         .latestnews-content-item-image {

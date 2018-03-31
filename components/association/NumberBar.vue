@@ -63,7 +63,7 @@ export default {
         .numberbar-list-item-description {
           color: #bca480;
           font-size: 15px;
-          font-family: OpenSansBold;
+          font-family: "Microsoft YaHei", "微软雅黑" , OpenSansBold;
           letter-spacing: 1px;
         }
       }
