@@ -26,7 +26,7 @@
 <script>
   export default {
     mounted: function() {
-      window.sr = ScrollReveal({ origin: 'bottom', reset: true, viewFactor: 0.3, scale: 1 });
+      window.sr = ScrollReveal({ origin: 'bottom', reset: true, viewFactor: 0.6, scale: 1 });
       sr.reveal('.latestnews-content-item', { duration: 800 }, 100);
     },
     components: {
@@ -79,6 +79,7 @@
           img {
             width: SC(370);
             height: SC(220);
+            border: 1px solid #ccc;
           }
           box-shadow: 2px 2px 3px #ccc;
         }
